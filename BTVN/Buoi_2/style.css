@@ -1,0 +1,41 @@
+* {
+    font-family: Lexend;
+}
+
+body {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.container {
+    display: inline-block; 
+    width: 500px;
+}
+
+.container1 {
+    display: inline-block;
+    width: 150px;
+}
+
+.container2 {
+    display: inline-block;
+    width: 165px;
+}
+
+.container3 {
+    display: inline-block;
+    width: 165px;
+}
+
+.red-color {
+    color:rgba(255, 30, 0, 0.918);
+}
+
+p {
+    font-family: Lora;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
