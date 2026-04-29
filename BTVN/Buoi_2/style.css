@@ -7,6 +7,10 @@ body {
     margin: 20px auto;
 }
 
+main {
+    margin-top: 50px;
+}
+
 .container {
     display: inline-block; 
     width: 500px;
