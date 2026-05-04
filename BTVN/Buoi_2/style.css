@@ -31,7 +31,8 @@ main {
     width: 165px;
 }
 
-.red-color {
+.sub-info {
+    display: inline;
     color:rgba(255, 30, 0, 0.918);
 }
 
