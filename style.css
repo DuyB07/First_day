@@ -1,4 +1,4 @@
-*{
+/* *{
     color: brown;
     font-family: Playwrite NZ Guides;
 }
@@ -18,5 +18,55 @@ p{
 
 #num4{
     color:chocolate
+} */
+
+.card {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 20px 20px 30px black;
 }
 
+img {
+    border-radius: 10px 10px 0 0;
+    object-fit: contain;
+}
+
+.content {
+    margin: 10px;
+}
+
+.smallbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.element {
+    display: flex;
+    margin-right: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.bigbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 25px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: blue;
+    box-shadow: 5px 5px 5px gray;
+    color: white
+}
