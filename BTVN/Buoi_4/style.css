@@ -1,3 +1,10 @@
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+}
+
 header {
     margin: 50px auto;
     width: 1200px;
@@ -16,7 +23,8 @@ footer {
     align-items: center;
     padding: 100px;
 }
-.main-header{
+
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,8 +48,13 @@ footer {
     border-radius: 5px;
 }
 
+.icon {
+    color: red;
+}
+
 .introduction {
     display: flex;
+    margin: 50px 0;
 }
 
 img {
@@ -49,13 +62,25 @@ img {
 }
 
 .content {
-    width: 300px;
+    width: 500px;
     margin-left: 100px
 }
+
+.content h1 {
+    font-size: 50px;
+}
+
 .sub-content {
     display: flex;
     justify-content: space-between;
 }
+
+.part h2 {
+    font-size: 35px;
+    color: red;
+    margin-bottom: 5px;
+}
+
 
 .skills {
     display: flex;
@@ -74,38 +99,118 @@ img {
     margin-right: 10px;
 }
 
-.skills div{
+.about-me {
+    margin: 50px 0;
+}
+
+.about-me p {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+#download-resume {
+    margin: 60px auto;
+}
+
+.skills {
+    margin: 50px 0;
+}
+
+.skills div {
     width: 600px;
-    margin-right: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .work-experience {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-.box{
+.work-content {
+    width: 600px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.year {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.company {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.position {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.latest-works {
     margin: 50px 0;
+}
+
+.box {
+    margin-top: 0;
+    margin-bottom: 50px;
     background-color: rgb(243, 242, 242);
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     padding-top: 50px;
 }
 
-.box div{
+.box>div {
     width: 500px;
 }
 
-.grey{
-    color:gray;
+.content-in-box {
+    margin: 30px 0;
 }
 
-.white{
-    color:white;
+footer h1 {
+    font-size: 43px;
+    margin-bottom: 0;
 }
 
-.button{
+footer p {
+    margin-bottom: 0;
+}
+
+#copyright {
+    margin-top: 75px;
+}
+
+.button {
+    width: fit-content;
     border: 1px solid red;
     border-radius: 30px;
+    font-size: 12px;
     color: red;
-    padding: 10px 20px;
+    padding: 10px 25px;
+    margin: 25px 0;
+}
+
+.title {
+    display: inline-block;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+    margin: 20px 0;
+}
+
+.grey {
+    color: gray;
+}
+
+.white {
+    color: white;
+}
+
+.dark-grey {
+    color: rgb(82, 82, 82);
 }
