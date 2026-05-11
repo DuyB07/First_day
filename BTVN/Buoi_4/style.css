@@ -1,0 +1,111 @@
+header {
+    margin: 50px auto;
+    width: 1200px;
+}
+
+main {
+    margin: 50px auto;
+    width: 1200px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.introduction {
+    display: flex;
+}
+
+img {
+    width: 500px;
+}
+
+.content {
+    width: 300px;
+    margin-left: 100px
+}
+.sub-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    display: flex;
+}
+
+.smallbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.skills div{
+    width: 600px;
+    margin-right: 20px;
+}
+
+.work-experience {
+    display: flex;
+}
+
+.box{
+    margin: 50px 0;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.box div{
+    width: 500px;
+}
+
+.grey{
+    color:gray;
+}
+
+.white{
+    color:white;
+}
+
+.button{
+    border: 1px solid red;
+    border-radius: 30px;
+    color: red;
+    padding: 10px 20px;
+}
