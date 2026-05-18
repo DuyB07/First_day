@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.circle {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: racing 10s infinite;
+}
+
+.loading-circle {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+}
+
+.loading-element {
+    animation: spin 2s infinite;
+}
+
+@keyframes racing {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(calc(100vw - 100%), 0);
+    }
+
+    50% {
+        transform: translate(calc(100vw - 100%), calc(100vh - 100%));
+    }
+
+    75% {
+        transform: translate(0, calc(100vh - 100%));
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
