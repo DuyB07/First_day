@@ -1,8 +1,9 @@
-html {
+* {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 0;
     font-style: normal;
+    /* margin: 0; */
 }
 
 header {

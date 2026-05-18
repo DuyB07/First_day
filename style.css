@@ -1,72 +1,97 @@
-/* *{
-    color: brown;
-    font-family: Playwrite NZ Guides;
+.box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    border-radius: 50%;
+    /* transform: translatex(50%); */
+    /* transition: transform 0.5s ease-in-out; */
+    animation: move1 5s infinite;
 }
 
-
-h1{
-    color:blueviolet;
-}
-
-p{
-    color:aqua
-}
-
-.red-color{
-    color:blue
-}
-
-#num4{
-    color:chocolate
+/* .box1:hover {
+    transform: scale(2);
 } */
 
-.card {
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 350px;
-    border-radius: 10px;
-    object-fit: contain;
-    box-shadow: 20px 20px 30px black;
+.parent {
+    position: relative;
+    background-color: aqua;
+    height: 400px;
+    width: 200px;
 }
 
-img {
-    border-radius: 10px 10px 0 0;
-    object-fit: contain;
-}
-
-.content {
-    margin: 10px;
-}
-
-.smallbox {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.element {
-    display: flex;
-    margin-right: 10px;
-    width: 70px;
-    height: 30px;
-    background-color: rgb(218, 218, 218);
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 5px gray;
-}
-
-
-.bigbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 25px;
-    border-radius: 20px;
-    margin: auto;
+.box2 {
     background-color: blue;
-    box-shadow: 5px 5px 5px gray;
-    color: white
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 175px;
+    left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 2s infinite;
+}
+
+.box3 {
+    background-color: green;
+    position: fixed;
+}
+
+.box4 {
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    height: 3000px;
+}
+
+p {
+    height: 100px;
+}
+
+@keyframes move{
+    0% {
+        background-color: black;
+        transform: rotate(0);
+        opacity: 0;
+    }
+
+    50% {
+        background-color: brown;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        background-color: chartreuse;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes move1{
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: translate(0, 100vh);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translate(0, 0);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: translate(100vw, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0vw, 0);
+    }
 }
