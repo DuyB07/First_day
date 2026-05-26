@@ -1,14 +1,27 @@
+:root {
+    --color-primary: red;
+}
+
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 0;
     font-style: normal;
     /* margin: 0; */
+    text-decoration: none;
+}
+
+body{
+    margin-top: 0;
 }
 
 header {
-    margin: 50px auto;
-    width: 1200px;
+    margin-top: 0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.068);
 }
 
 main {
@@ -25,7 +38,13 @@ footer {
     padding: 100px;
 }
 
-.main-header {
+.container {
+    margin: auto;
+    width: 1200px;
+}
+
+.header-inner {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +69,7 @@ footer {
 }
 
 .icon {
-    color: red;
+    color: var(--color-primary);
 }
 
 .introduction {
@@ -78,7 +97,7 @@ img {
 
 .part h2 {
     font-size: 35px;
-    color: red;
+    color: var(--color-primary);
     margin-bottom: 5px;
 }
 
@@ -110,6 +129,7 @@ img {
 }
 
 #download-resume {
+    display: block;
     margin: 60px auto;
 }
 
@@ -182,25 +202,30 @@ footer p {
     margin-bottom: 0;
 }
 
+.designstub-link {
+    transition: all 0.2s ease-in-out;
+}
+
 #copyright {
     margin-top: 75px;
 }
 
 .button {
     width: fit-content;
-    border: 1px solid red;
+    border: 1px solid var(--color-primary);
     border-radius: 30px;
     font-size: 12px;
-    color: red;
+    color: var(--color-primary);
     padding: 10px 25px;
     margin: 25px 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .title {
     display: inline-block;
     font-size: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--color-primary);
     margin: 20px 0;
 }
 
@@ -214,4 +239,19 @@ footer p {
 
 .dark-grey {
     color: rgb(82, 82, 82);
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.designstub-link:hover {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 500){
+    main {
+        width: 50%;
+    }
 }
