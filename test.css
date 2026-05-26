@@ -1,18 +1,30 @@
-.box1 {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    position: absolute;
-    z-index: -1;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.box2 {
-    width: 100px;
+.card {
+    width: 900px;
     height: 100px;
-    background-color: blue;
+    background-color: red;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 900px) {
+    .card {
+        width: 50%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card {
+        background-color: yellow;
+    }
 }
